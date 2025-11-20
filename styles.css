@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "RF Dewi";
+  src: url("fonts/RFDewi-Black.woff2") format("woff2"),
+    url("fonts/RFDewi-Black.woff") format("woff"),
+    url("fonts/RFDewi-Black.otf") format("opentype"),
+    url("fonts/RFDewi-Black.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("fonts/Inter-Black.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("images/header_1920.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  max-height: 542px;
+  padding-top: 20px;
+}
+
+.header__nav {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__side {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.nav__side--left {
+  align-items: flex-start;
+}
+
+.nav__side--right {
+  align-items: flex-end;
+}
+
+.nav__main-text {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav__sub-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.8;
+  display: block;
+}
+
+.nav__item--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.nav__logo {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 120%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__subtitle {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #ffffff;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__text {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  color: #ffffff;
+  padding-top: 90px;
+  text-align: center;
+  white-space: wrap;
+  line-height: 120%;
+}
+
+.header__button {
+  background-color: #f4df74;
+  width: 265px;
+  height: 64px;
+  border-width: 0px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button__text {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #353535;
+  line-height: 120%;
+}
