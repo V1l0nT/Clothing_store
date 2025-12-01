@@ -99,16 +99,51 @@
   line-height: 120%;
 }
 
+.main__block {
+  margin: 120px auto 0;
+  width: 1125px;
+}
+
 .section__title {
   font-family: "RF Dewi", sans-serif;
   font-size: 48px;
   font-weight: 800;
+  color: #191919;
   text-align: center;
+  line-height: 110%;
 }
 
 .section__subtitle {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #1a1a1a;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 680px;
+  margin: 50px auto 0;
+  line-height: 150%;
+}
+
+.section__content {
+  width: 1125px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 50px;
+}
+
+.product-card__img {
+  width: 350px;
+  height: 350px;
+}
+
+.product-title {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
 }
