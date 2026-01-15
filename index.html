@@ -25,7 +25,10 @@
           </li>
         </ul>
       </nav>
-      <div class="header__text">Сделано <br />в Санкт-Петербурге</div>
+      <div class="header__text">
+        <p>Сделано</p>
+        <p>в Санкт-Петербурге</p>
+      </div>
       <button class="header__button">
         <div class="button__text">Отправить запрос</div>
       </button>
@@ -33,8 +36,8 @@
     <main>
       <section class="main__block">
         <div class="section__title title1">
-          Современный <br />
-          мерчендайз для бизнеса
+          <p>Современный</p>
+          <p>мерчендайз для бизнеса</p>
         </div>
         <div class="section__subtitle subtitle1">
           Над реализацией проектов по разработке и производству одеждыи
@@ -45,8 +48,10 @@
         <div class="section__content content1">
           <div class="product-card">
             <img class="product-card__img" src="images/image.png" alt="Худи" />
-            <h2 class="product-title">Худи</h2>
-            <p class="product-price">от 1650 ₽</p>
+            <div class="product-title">
+              <span class="product-name">Худи</span>
+              <span class="product-price">от 1650 ₽</span>
+            </div>
           </div>
 
           <div class="product-card">
@@ -55,8 +60,10 @@
               src="images/image2.png"
               alt="Футболки"
             />
-            <h2 class="product-title">Футболки</h2>
-            <p class="product-price">от 510 ₽</p>
+            <div class="product-title">
+              <span class="product-name">Футболки</span>
+              <span class="product-price">от 510 ₽</span>
+            </div>
           </div>
 
           <div class="product-card">
@@ -65,8 +72,10 @@
               src="images/image3.png"
               alt="Свитшоты"
             />
-            <h2 class="product-title">Свитшоты</h2>
-            <p class="product-price">от 890 ₽</p>
+            <div class="product-title">
+              <span class="product-name">Свитшоты</span>
+              <span class="product-price">от 890 ₽</span>
+            </div>
           </div>
 
           <div class="product-card">
@@ -75,8 +84,10 @@
               src="images/image4.png"
               alt="Штаны"
             />
-            <h2 class="product-title">Штаны</h2>
-            <p class="product-price">от 1230 ₽</p>
+            <div class="product-title">
+              <span class="product-name">Штаны</span>
+              <span class="product-price">от 1230 ₽</span>
+            </div>
           </div>
 
           <div class="product-card">
@@ -85,8 +96,10 @@
               src="images/image5.png"
               alt="Шопперы"
             />
-            <h2 class="product-title">Шопперы</h2>
-            <p class="product-price">от 330 ₽</p>
+            <div class="product-title">
+              <span class="product-name">Шопперы</span>
+              <span class="product-price">от 330 ₽</span>
+            </div>
           </div>
 
           <div class="product-card">
@@ -95,14 +108,25 @@
               src="images/image6.png"
               alt="Кепки"
             />
-            <h2 class="product-title">Кепки</h2>
-            <p class="product-price">от 400 ₽</p>
+            <div class="product-title">
+              <span class="product-name">Кепки</span>
+              <span class="product-price">от 400 ₽</span>
+            </div>
           </div>
         </div>
       </section>
-      <section class="main__block">
-        <div class="section__title title">
-          Производство одежды для компаний, брендов, артистов
+      <div class="divider-section">
+          <img
+            class="video"
+            src="images/divider-clothes.svg"
+            alt="Видео"
+          />
+      </div>
+      <section class="collaboration-block">
+        <div class="section__title collaboration-block__title">
+          <p>Производство одежды</p>
+          <p>для компаний, брендов,</p>
+          <p>артистов</p>
         </div>
         <div class="section__subtitle subtitle">
           Наша команда по разработке и производству одежды может реализовать
@@ -110,7 +134,41 @@
           себя всю работу под ключ, или решить конкретные задачи на любом из
           этапов производства.
         </div>
-        <div class="section__content"></div>
+        <div class="collaboration__content">
+          <div class="product-card">
+            <img
+              class="product-card-small__img"
+              src="images/pattern_image.svg"
+              alt="Разработка лекал и дизайна"
+            />
+            <div class="collaboration-title">
+              <span class="collaboration-name">Разработка лекал и дизайна</span>
+              <span class="collaboration-description">Поможем создать уникальные лекала для вашей одежды или адаптировать уже имеющиеся. Разработаем индивидуальный дизайн ваших товаров</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              class="product-card-small__img"
+              src="images/tailoring.svg"
+              alt="Пошив одежды на заказ"
+            />
+            <div class="collaboration-title">
+              <span class="collaboration-name">Пошив одежды на заказ</span>
+              <span class="collaboration-description">Пошив трикотажных изделий любой сложности и в любых объемах, как по вашим образцам, так и по нашим базовым лекалам</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              class="product-card-small__img"
+              src="images/brand.svg"
+              alt="Бренд одежды под ключ"
+            />
+            <div class="collaboration-title">
+              <span class="collaboration-name">Бренд одежды под ключ</span>
+              <span class="collaboration-description">Поможем разработать линейку одежды для вашего бренда, от пошива до реализации.</span>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="main__block">
         <div class="section__title title">

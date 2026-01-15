@@ -149,7 +149,82 @@
 
 .product-title {
   font-family: "RF Dewi", sans-serif;
-  font-size: 24px;
   font-weight: 400;
-  margin-top: 20px;
+  display: flex;
+}
+
+.product-name {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.product-price {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0 0 15px;
+}
+
+.divider-section {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1750px;
+}
+
+section {
+  width: 1920px;
+}
+
+.collaboration-block {
+  background-color: #eeeeee;
+  width: 1920px;
+  margin: 280px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.collaboration-block__title {
+  padding-top: 300px;
+}
+
+.product-card-small__img {
+  height: 210px;
+}
+
+.collaboration-name {
+  font-size: 20px;
+  padding-top: 20px;
+  min-width: 350px;
+}
+
+.collaboration-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0 0 15px;
+  line-height: 150%;
+}
+
+.collaboration__content {
+  width: 1125px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 50px;
+  align-items: stretch; 
+}
+
+.collaboration-title {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column; 
+  max-width: 350px;
+  text-align: center;
 }
