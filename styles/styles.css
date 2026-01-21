@@ -21,23 +21,36 @@
   box-sizing: border-box;
 }
 
+.body {
+  width: 100vw;
+  min-width: 600px;
+}
+
 .header {
   background-image: url("../images/header_1920.png");
   background-color: #110000;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1920px;
+  background-position: center;
+  width: 100%;
   height: 100%;
   min-height: 677px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__nav {
+  width: 100%;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
-  margin: 0 396px;
+  margin: 0 auto;
   justify-content: space-between;
   color: #ffffff;
-  padding-top: 33px;
+  padding: 33px 40px 0px 38px;
+  max-width: 1200px;
 }
 
 .nav__main-text {
@@ -84,7 +97,7 @@
 .header__button {
   background-color: #f4df74;
   width: 265px;
-  height: 64px;
+  min-height: 64px;
   border-width: 0px;
   display: block;
   text-align: center;
@@ -101,8 +114,15 @@
   line-height: 120%;
 }
 
+.header__footer {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: auto;
+  padding-bottom: 34px;
+}
+
 .main {
-  width: 1920px;
+  width: 100%;
 }
 
 .main__block {
@@ -168,20 +188,12 @@
 .divider-section {
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 1750px;
-}
-
-section {
-  width: 1920px;
+  margin-top: -180px;
 }
 
 .collaboration-block {
   background-color: #eeeeee;
-  width: 1920px;
+  width: 100%;
   margin: 280px auto 0;
   display: flex;
   flex-direction: column;
@@ -190,11 +202,16 @@ section {
 }
 
 .collaboration-block__title {
-  padding-top: 300px;
+  padding-top: 130px;
 }
 
-.product-card-small__img {
+.product-card__img_small {
   height: 210px;
+}
+
+.product-card__img_big {
+  height: 310px;
+  width: 540px;
 }
 
 .collaboration-name {
@@ -227,4 +244,156 @@ section {
   flex-direction: column; 
   max-width: 350px;
   text-align: center;
+}
+
+.embroidery__block {
+  margin: 0 auto;
+  padding-bottom: 320px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.embroidery-title {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column; 
+  max-width: 535px;
+  text-align: center;
+}
+
+.embroidery-name {
+  font-size: 20px;
+  padding-top: 40px;
+  min-width: 535px;
+}
+
+.embroidery-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 0 0 15px;
+  line-height: 150%;
+}
+
+.about-us__block {
+  width: 100%;
+  background-color: #191919;
+  margin: 100px auto 0;
+  padding-top: 100px;
+}
+
+.about-us__title {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 110%;
+  padding-top: 130px;
+}
+
+.about-us__subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 680px;
+  margin: 26px auto 0;
+  line-height: 150%;
+}
+
+.about-us__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 35px;
+  margin: 70px auto 0px;
+  padding-bottom: 180px;
+  justify-content: center;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 400;
+  display: flex;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 40px;
+}
+
+.about-name {
+  font-size: 20px;
+  padding-top: 40px;
+  min-width: 535px;
+  color: #FFFFFF;
+}
+
+.about-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #FFFFFF;
+  width: 160px;
+}
+
+.product-card__img_radio {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
+
+.divider-about-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -280px;
+}
+
+.production__block {
+  margin: 120px auto 0;
+  width: 1125px;
+  padding-bottom: 340px;
+}
+
+@media (max-width: 700px) {
+  .nav__side-info {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .header__footer {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav__logo {
+    font-size: 25px;
+  }
+
+  .header__text {
+    font-size: 35px;
+  }
+
+  .header__button {
+    width: 221px;
+  }
+
+  .button__text {
+    font-size: 14px;
+  }
 }

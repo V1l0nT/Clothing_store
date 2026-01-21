@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <nav class="header__nav">
         <ul class="nav">
-          <li>
+          <li class="nav__side-info">
             <div class="nav__main-text">+7 925 343 16 96</div>
             <div class="nav__sub-text">Перезвоните мне</div>
           </li>
@@ -19,7 +19,7 @@
             <div class="nav__logo">FAMFACTORY</div>
             <div class="nav__subtitle">Швейная фабрика</div>
           </li>
-          <li>
+          <li class="nav__side-info">
             <div class="nav__main-text">MAIL@FAMFACTORY.RU</div>
             <div class="nav__sub-text">Наша почта</div>
           </li>
@@ -32,8 +32,20 @@
       <button class="header__button">
         <div class="button__text">Отправить запрос</div>
       </button>
+      <div class="header__footer">
+          <ul class="nav">
+            <li>
+            <div class="nav__main-text">+7 925 343 16 96</div>
+            <div class="nav__sub-text">Перезвоните мне</div>
+          </li>
+          <li>
+            <div class="nav__main-text">MAIL@FAMFACTORY.RU</div>
+            <div class="nav__sub-text">Наша почта</div>
+          </li>
+          </ul>
+        </div>
     </header>
-    <main>
+    <main class="main">
       <section class="main__block">
         <div class="section__title title1">
           <p>Современный</p>
@@ -115,14 +127,14 @@
           </div>
         </div>
       </section>
-      <div class="divider-section">
+      <section class="collaboration-block">
+        <div class="divider-section">
           <img
             class="video"
             src="images/divider-clothes.svg"
             alt="Видео"
           />
-      </div>
-      <section class="collaboration-block">
+        </div>
         <div class="section__title collaboration-block__title">
           <p>Производство одежды</p>
           <p>для компаний, брендов,</p>
@@ -137,7 +149,7 @@
         <div class="collaboration__content">
           <div class="product-card">
             <img
-              class="product-card-small__img"
+              class="product-card__img product-card__img_small"
               src="images/pattern_image.svg"
               alt="Разработка лекал и дизайна"
             />
@@ -148,7 +160,7 @@
           </div>
           <div class="product-card">
             <img
-              class="product-card-small__img"
+              class="product-card__img product-card__img_small"
               src="images/tailoring.svg"
               alt="Пошив одежды на заказ"
             />
@@ -159,7 +171,7 @@
           </div>
           <div class="product-card">
             <img
-              class="product-card-small__img"
+              class="product-card__img product-card__img_small"
               src="images/brand.svg"
               alt="Бренд одежды под ключ"
             />
@@ -170,21 +182,96 @@
           </div>
         </div>
       </section>
-      <section class="main__block">
-        <div class="section__title title">
-          Способы нанесения принтов и вышивка
+      <section class="embroidery__block">
+        <div class="section__title embroidery__title">
+          <p>Способы нанесения</p>
+          <p>принтов и вышивка</p>
         </div>
-        <div class="section__content"></div>
+        <div class="section__content">
+          <div class="collaboration__content">
+          <div class="product-card">
+            <img
+              class="product-card__img product-card__img_big"
+              src="images/silkscreen.svg"
+              alt="Шелкография"
+            />
+            <div class="embroidery-title">
+              <span class="embroidery-name">Шелкография</span>
+              <span class="embroidery-description">Трафаретная печать подходит для нанесения почти на любых изделиях: футболках, толстовках, свитшотах и т.д. Принты, сделанные данным способом имеют высокую износостойкость, не требуют особого ухода и прослужат довольно долго.</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              class="product-card__img product-card__img_big"
+              src="images/embroidery.svg"
+              alt="Вышивка на одежде"
+            />
+            <div class="embroidery-title">
+              <span class="embroidery-name">Вышивка на одежде</span>
+              <span class="embroidery-description">Один из самых интересных способов нанесения изображения на одежду. Вышивка долговечна, без проблем переносит механические воздействия. Данный вид нанесения выглядит наиболее эффектно и прослужит дольше всего.</span>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
       </section>
-      <section class="main__block">
-        <div class="section__title title">Схема работы с нами</div>
-        <div class="section__subtitle subtitle">
+      <section class="about-us__block">
+        <div class="divider-about-section">
+          <img
+            class="video"
+            src="images/divider-silkscreen.svg"
+            alt="Видео"
+          />
+        </div>
+        <div class="section__title about-us__title">Схема работы с нами</div>
+        <div class="section__subtitle about-us__subtitle">
           К каждому проекту мы подходим индивидуально. Свяжитесь с нами и мы
           поможем реализовать ваши идеи.
         </div>
-        <div class="section__content"></div>
+        <div class="about-us__content">
+          <div class="about-card">
+            <img
+              class="product-card__img product-card__img_radio"
+              src="images/phone.svg"
+              alt="Отправляете заявку или звоните +7 (911) 109-97-07"
+            />
+            <div class="about-title">
+              <span class="about-description">Отправляете заявку или звоните +7 (911) 109-97-07</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <img
+              class="product-card__img product-card__img_radio"
+              src="images/development.svg"
+              alt="Разрабатываем лекала и шьём образец"
+            />
+            <div class="about-title">
+              <span class="about-description">Разрабатываем лекала и шьём образец</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <img
+              class="product-card__img product-card__img_radio"
+              src="images/sewing.svg"
+              alt="Шьём тираж и наносим принт или вышивку"
+            />
+            <div class="about-title">
+              <span class="about-description">Шьём тираж и наносим принт или вышивку</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <img
+              class="product-card__img product-card__img_radio"
+              src="images/shipment.svg"
+              alt="Упаковываем и отгружаем партию"
+            />
+            <div class="about-title">
+              <span class="about-description">Упаковываем и отгружаем партию</span>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="main__block">
+      <section class="production__block">
         <div class="section__title title">
           Все вещи мы шьём на собственном производстве в Санкт-Петербурге по
           собственному дизайну и крою
@@ -194,7 +281,56 @@
           продаём в онлайн и через собственные розничные магазины в Питере и
           Москве.
         </div>
-        <div class="section__content"></div>
+        <div class="section__content">
+          <div class="section__content content1">
+          <div class="product-card">
+            <img 
+              class="product-card__img" 
+              src="images/production1.svg" 
+              alt="Худи" />
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__img"
+              src="images/production2.svg"
+              alt="Футболки"
+            />
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__img"
+              src="images/production3.svg"
+              alt="Свитшоты"
+            />
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__img"
+              src="images/production4.svg"
+              alt="Штаны"
+            />
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__img"
+              src="images/production5.svg"
+              alt="Шопперы"
+            />
+          </div>
+
+          <div class="product-card">
+            <img
+              class="product-card__img"
+              src="images/production6.svg"
+              alt="Кепки"
+            />
+          </div>
+        </div>
+        </div>
       </section>
       <section class="main__block">
         <div class="section__title title">Наши коллаборации</div>
