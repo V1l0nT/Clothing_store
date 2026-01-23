@@ -127,7 +127,10 @@
 
 .main__block {
   margin: 120px auto 0;
-  width: 1125px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section__title {
@@ -246,7 +249,7 @@
   text-align: center;
 }
 
-.embroidery__block {
+.embroidery-block {
   margin: 0 auto;
   padding-bottom: 320px;
   display: flex;
@@ -279,7 +282,7 @@
   line-height: 150%;
 }
 
-.about-us__block {
+.about-us-block {
   width: 100%;
   background-color: #191919;
   margin: 100px auto 0;
@@ -364,10 +367,67 @@
   margin-top: -280px;
 }
 
-.production__block {
+.production-block {
   margin: 120px auto 0;
   width: 1125px;
-  padding-bottom: 340px;
+  padding-bottom: 200px;
+}
+
+.influence-block {
+  width: 100%;
+  background-color: #191919;
+  margin: 100px auto 0;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.influence-title {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 110%;
+  padding-top: 120px;
+}
+
+.influence-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 680px;
+  margin: 26px auto 0;
+  line-height: 150%;
+}
+
+.influence-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -280px;
+}
+
+.footer {
+  background-color: #191919;
+  width: 100%;
+  min-width: 1125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 34px; 
+}
+
+.footer__nav {
+  width: 1125px;
+  border-top: 1px solid #2C2C2C;
 }
 
 @media (max-width: 700px) {
@@ -395,5 +455,27 @@
 
   .button__text {
     font-size: 14px;
+  }
+
+  .section__title {
+    font-size: 30px;
+  }
+
+  .section__subtitle {
+    width: 560px;
+  }
+
+  .section__content {
+    width: 560px;
+  }
+
+  .product-card__img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .divider-section {
+    width: 540px;
+    min-width: 0;
   }
 }
