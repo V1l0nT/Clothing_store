@@ -1,487 +1,356 @@
-@font-face {
-  font-family: "RF Dewi";
-  src: url("../fonts/RFDewi-Black.woff2") format("woff2"),
-    url("../fonts/RFDewi-Black.woff") format("woff"),
-    url("../fonts/RFDewi-Black.otf") format("opentype"),
-    url("../fonts/RFDewi-Black.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
-}
+  :root {
+    --background-black: #110000;
+    --background-white:#ffffff;
+    --button-color: #f4df74;
+    --button-text-color: #353535;
+    --title-color: #191919;
+    --subtitle-color:#1a1a1a;
+    --collaboration-color: #eeeeee;
+    --border-color: #2C2C2C;
 
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Black.otf") format("otf");
-  font-style: normal;
-  font-display: swap;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.body {
-  width: 100vw;
-  min-width: 600px;
-}
-
-.header {
-  background-image: url("../images/header_1920.png");
-  background-color: #110000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  min-height: 677px;
-  display: flex;
-  flex-direction: column;
-}
-
-.header__nav {
-  width: 100%;
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  justify-content: space-between;
-  color: #ffffff;
-  padding: 33px 40px 0px 38px;
-  max-width: 1200px;
-}
-
-.nav__main-text {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0px;
-}
-
-.nav__sub-text {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0px;
-}
-
-.nav__logo {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 25px;
-  font-weight: 800;
-  letter-spacing: 0px;
-  text-align: center;
-}
-
-.nav__subtitle {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0px;
-  text-align: center;
-}
-
-.header__text {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 800;
-  font-size: 60px;
-  color: #ffffff;
-  text-align: center;
-  white-space: wrap;
-  line-height: 120%;
-  margin-top: 133px;
-}
-
-.header__button {
-  background-color: #f4df74;
-  width: 265px;
-  min-height: 64px;
-  border-width: 0px;
-  display: block;
-  text-align: center;
-  margin: 50px auto 0;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.button__text {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  color: #353535;
-  line-height: 120%;
-}
-
-.header__footer {
-  visibility: hidden;
-  opacity: 0;
-  margin-top: auto;
-  padding-bottom: 34px;
-}
-
-.main {
-  width: 100%;
-}
-
-.main__block {
-  margin: 120px auto 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section__title {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 48px;
-  font-weight: 800;
-  color: #191919;
-  text-align: center;
-  line-height: 110%;
-}
-
-.section__subtitle {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #1a1a1a;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 680px;
-  margin: 50px auto 0;
-  line-height: 150%;
-}
-
-.section__content {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1125px;
-  gap: 35px;
-  margin-top: 50px;
-}
-
-.product-card__img {
-  width: 350px;
-  height: 350px;
-}
-
-.product-title {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 400;
-  display: flex;
-}
-
-.product-name {
-  font-size: 24px;
-  padding-top: 20px;
-}
-
-.product-price {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 15px 0 0 15px;
-}
-
-.divider-section {
-  display: flex;
-  justify-content: center;
-  margin-top: -180px;
-}
-
-.collaboration-block {
-  background-color: #eeeeee;
-  width: 100%;
-  margin: 280px auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 130px;
-}
-
-.collaboration-block__title {
-  padding-top: 130px;
-}
-
-.product-card__img_small {
-  height: 210px;
-}
-
-.product-card__img_big {
-  height: 310px;
-  width: 540px;
-}
-
-.collaboration-name {
-  font-size: 20px;
-  padding-top: 20px;
-  min-width: 350px;
-}
-
-.collaboration-description {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 15px 0 0 15px;
-  line-height: 150%;
-}
-
-.collaboration__content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 35px;
-  margin-top: 50px;
-  align-items: stretch;
-}
-
-.collaboration-title {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column; 
-  max-width: 350px;
-  text-align: center;
-}
-
-.embroidery-block {
-  margin: 0 auto;
-  padding-bottom: 320px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 100px;
-}
-
-.embroidery-title {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column; 
-  max-width: 535px;
-  text-align: center;
-}
-
-.embroidery-name {
-  font-size: 20px;
-  padding-top: 40px;
-  min-width: 535px;
-}
-
-.embroidery-description {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 15px 0 0 15px;
-  line-height: 150%;
-}
-
-.about-us-block {
-  width: 100%;
-  background-color: #191919;
-  margin: 100px auto 0;
-  padding-top: 100px;
-}
-
-.about-us__title {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 48px;
-  font-weight: 800;
-  color: #FFFFFF;
-  text-align: center;
-  line-height: 110%;
-  padding-top: 130px;
-}
-
-.about-us__subtitle {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #FFFFFF;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 680px;
-  margin: 26px auto 0;
-  line-height: 150%;
-}
-
-.about-us__content {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 35px;
-  margin: 70px auto 0px;
-  padding-bottom: 180px;
-  justify-content: center;
-}
-
-.about-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-title {
-  font-family: "RF Dewi", sans-serif;
-  font-weight: 400;
-  display: flex;
-  text-align: center;
-  color: #FFFFFF;
-  padding-top: 40px;
-}
-
-.about-name {
-  font-size: 20px;
-  padding-top: 40px;
-  min-width: 535px;
-  color: #FFFFFF;
-}
-
-.about-description {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  color: #FFFFFF;
-  width: 160px;
-}
-
-.product-card__img_radio {
-  height: 100px;
-  width: 100px;
-  align-items: center;
-}
-
-.divider-about-section {
-  display: flex;
-  justify-content: center;
-  margin-top: -280px;
-}
-
-.production-block {
-  margin: 120px auto 0;
-  max-width: 1125px;
-  padding-bottom: 200px;
-}
-
-.influence-block {
-  width: 100%;
-  background-color: #191919;
-  margin: 100px auto 0;
-  padding-top: 100px;
-  padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.influence-title {
-  font-family: "RF Dewi", sans-serif;
-  font-size: 48px;
-  font-weight: 800;
-  color: #FFFFFF;
-  text-align: center;
-  line-height: 110%;
-  padding-top: 120px;
-}
-
-.influence-subtitle {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #FFFFFF;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 680px;
-  margin: 26px auto 0;
-  line-height: 150%;
-}
-
-.influence-section {
-  display: flex;
-  justify-content: center;
-  margin-top: -280px;
-}
-
-.footer {
-  background-color: #191919;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 34px;
-}
-
-.footer__nav {
-  border-top: 1px solid #2C2C2C;
-  min-width: 1125px;
-}
-
-@media (max-width: 700px) {
-  .nav__side-info {
-    visibility: hidden;
-    opacity: 0;
+    --font-rf-dewi: "RF Dewi", sans-serif;
+    --font-inter: "Inter", sans-serif;
+  }
+  
+  @font-face {
+    font-family: "RF Dewi";
+    src: url("../fonts/RFDewi-Black.woff2") format("woff2"),
+      url("../fonts/RFDewi-Black.woff") format("woff"),
+      url("../fonts/RFDewi-Black.otf") format("opentype"),
+      url("../fonts/RFDewi-Black.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
   }
 
-  .header__footer {
-    visibility: visible;
-    opacity: 1;
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Black.otf") format("otf");
+    font-style: normal;
+    font-display: swap;
   }
 
-  .nav__logo {
-    font-size: 25px;
+  * {
+    box-sizing: border-box;
   }
 
-  .header__text {
-    font-size: 35px;
+  .body {
+    width: 100%;
+    overflow-x: hidden
   }
 
-  .header__button {
-    width: 221px;
-  }
-
-  .button__text {
-    font-size: 14px;
-  }
-
-  .section__title {
-    font-size: 30px;
-  }
-
-  .section__subtitle {
-    width: 560px;
-  }
-
-  .section__content {
-    width: 560px;
-  }
-
-  .product-card__img {
-    width: 250px;
-    height: 250px;
-  }
-
-  .collaboration__content {
+  .header {
+    background-image: url("../images/header_1920.png");
+    background-color: var(--background-black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 677px;
+    display: flex;
     flex-direction: column;
   }
 
-  .collaboration-block {
-    padding-bottom: 70px;
+  .header__nav {
+    width: 100%;
   }
 
-  .collaboration__content {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: var(--background-white);
+    padding: 33px 40px 0px 38px;
+    max-width: 1200px;
+  }
+
+  .nav__main-text {
+    font-family: var(--font-rf-dewi);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0px;
+  }
+
+  .nav__sub-text {
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+
+  .nav__logo {
+    font-family: var(--font-rf-dewi);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .nav__subtitle {
+    font-family: var(--font-rf-dewi);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .header__text {
+    font-family: var(--font-rf-dewi);
+    font-weight: 800;
+    font-size: 60px;
+    color: var(--background-white);
+    text-align: center;
+    white-space: wrap;
+    line-height: 120%;
+    margin-top: 133px;
+  }
+
+  .header__button {
+    background-color: var(--button-color);
+    width: 265px;
+    min-height: 64px;
+    border-width: 0px;
+    display: block;
+    text-align: center;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .button__text {
+    font-family: var(--font-rf-dewi);
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--button-text-color);
+    line-height: 120%;
+  }
+
+  .header__footer {
+    display: none;
+    margin-top: auto;
+    padding-bottom: 34px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .main-block {
+    margin: 120px auto 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .section__title {
+    font-family: var(--font-rf-dewi);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--title-color);
+    text-align: center;
+    line-height: 110%;
+  }
+
+  .section__subtitle {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--subtitle-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    margin: 50px auto 0;
+    line-height: 150%;
+  }
+
+  .section__content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1125px;
+    gap: 35px;
+    margin-top: 50px;
+  }
+
+  .product-card__img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .product-card__img_small {
+    height: 210px;
+  }
+
+  .product-card__img_big {
+    height: 310px;
+    width: 540px;
+  }
+
+  .product-card__img_radio {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+  }
+
+  .product-title {
+    font-family: var(--font-rf-dewi);
+    font-weight: 400;
+    display: flex;
+  }
+
+  .product-name {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .product-price {
+    font-family: var(--font-rf-dewi);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0 0 15px;
+  }
+
+  .divider-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -180px;
+    height: 350px;
+  }
+
+  .video {
+    width: 1125px;
+  }
+
+  .collaboration-block {
+    background-color: var(--collaboration-color);
+    width: 100%;
+    margin: 280px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 130px;
+  }
+
+  .collaboration-block__title {
+    padding-top: 130px;
+  }
+
+  .collaboration-name {
+    font-size: 20px;
+    padding-top: 20px;
+    min-width: 350px;
+  }
+
+  .collaboration-description {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0 0 15px;
+    line-height: 150%;
+  }
+
+  .collaboration-block__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 50px;
+    align-items: stretch;
+  }
+
+  .collaboration-title {
+    font-family: var(--font-rf-dewi);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column; 
+    max-width: 350px;
+    text-align: center;
+  }
+
+  .embroidery-block {
+    margin: 0 auto;
+    padding-bottom: 320px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .embroidery-title {
+    font-family: var(--font-rf-dewi);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column; 
+    max-width: 535px;
+    text-align: center;
+  }
+
+  .embroidery-block__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 50px;
+    align-items: stretch;
+  }
+
+  .embroidery-name {
+    font-size: 20px;
+    padding-top: 40px;
+    min-width: 535px;
+  }
+
+  .embroidery-description {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0 0 15px;
+    line-height: 150%;
+  }
+
+  .about-us-block {
+    width: 100%;
+    background-color: var(--title-color);
+    margin: 100px auto 0;
+    padding-top: 100px;
+  }
+
+  .about-us-block__title {
+    font-family: var(--font-rf-dewi);
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 110%;
+    padding-top: 130px;
+  }
+
+  .about-us-block__subtitle {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    margin: 26px auto 0;
+    line-height: 150%;
+  }
+
+  .about-us-block__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 35px;
+    margin: 70px auto 0px;
+    padding-bottom: 180px;
+    justify-content: center;
   }
 
   .product-card {
@@ -490,25 +359,277 @@
     align-items: center;
   }
 
-  .product-card__img_big {
-    width: 400px;
-    height: 230px;
+  .about-title {
+    font-family: var(--font-rf-dewi);
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 40px;
   }
 
-  .embroidery-block {
-    padding-bottom: 140px;
+  .about-name {
+    font-size: 20px;
+    padding-top: 40px;
+    min-width: 535px;
+    color: #FFFFFF;
   }
 
-  .product-card__img_radio {
-    width: 100px;
-    height: 100px;
+  .about-description {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 160px;
   }
 
-  .about-us__content {
-    gap: 180px;
+  .divider-about-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -280px;
   }
 
   .production-block {
-    max-width: 540px;
+    margin: 120px auto 0;
+    max-width: 1125px;
+    padding-bottom: 200px;
   }
-}
+
+  .influence-block {
+    width: 100%;
+    background-color: var(--title-color);
+    margin: 100px auto 0;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .influence-title {
+    font-family: var(--font-rf-dewi);
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 110%;
+    padding-top: 120px;
+  }
+
+  .influence-subtitle {
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    margin: 26px auto 0;
+    line-height: 150%;
+  }
+
+  .influence-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -280px;
+  }
+
+  .footer {
+    background-color: var(--title-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+
+  .footer__nav {
+    border-top: 1px solid var(--border-color);
+    min-width: 1125px;
+  }
+
+  .footer__footer {
+    display: none;
+  }
+
+  .logo__main-text {
+    font-family: var(--font-rf-dewi);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .logo__sub-text {
+    font-family: var(--font-rf-dewi);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .footer__button {
+    background-color: var(--button-color);
+    width: 265px;
+    min-height: 64px;
+    border-width: 0px;
+    display: block;
+    text-align: center;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 700px) {
+    .nav__side-info {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .header__footer {
+      display: block;
+    }
+
+    .nav__logo {
+      font-size: 25px;
+    }
+
+    .header__text {
+      font-size: 35px;
+    }
+
+    .header__button {
+      width: 221px;
+    }
+
+    .button__text {
+      font-size: 14px;
+    }
+
+    .section__title {
+      font-size: 30px;
+    }
+
+    .section__subtitle {
+      width: 560px;
+    }
+
+    .section__content {
+      width: 560px;
+    }
+
+    .product-card__img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .collaboration-block__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .embroidery-block__content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .collaboration-block {
+      padding-bottom: 70px;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .product-card__img_big {
+      width: 400px;
+      height: 230px;
+    }
+
+    .embroidery-block {
+      padding-bottom: 140px;
+    }
+
+    .product-card__img_radio {
+      width: 100px;
+      height: 100px;
+    }
+
+    .about-us-block__content {
+      gap: 180px;
+      padding-bottom: 110px;
+    }
+
+    .production-block {
+      max-width: 540px;
+      margin: 85px auto 0px;
+    }
+
+    .divider-section {
+      width: 540px;
+    }
+
+    .video {
+      width: 540px;
+    }
+
+    .divider-about-section {
+      height: 270px;
+      margin-top: -220px;
+    }
+
+    footer > .footer__nav {
+      display: none;
+      border-top: none;
+    }
+
+    .footer .footer__nav {
+      border-top: none;
+    }
+
+    .footer__footer {
+      display: flex !important;
+      border-top: 1px solid var(--border-color);
+      max-width: 540px;
+      width: 100%;
+      color: #FFFFFF;
+      flex-direction: column;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .logo__main-text {
+      font-size: 25px;
+    }
+
+    .footer__content {
+      padding-top: 55px;
+    }
+
+    .footer__footer .footer__nav {
+      display: block;
+      border-top: none;
+      min-width: auto;
+      width: 100%;
+    }
+
+    .footer__footer .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 30px 20px;
+      margin: 0;
+      width: 100%;
+    }
+
+    .footer__nav > li {
+      padding-top: 50px;
+    }
+  }
